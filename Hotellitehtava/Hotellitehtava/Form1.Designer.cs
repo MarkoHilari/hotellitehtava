@@ -37,7 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.ktunnusTB = new System.Windows.Forms.TextBox();
             this.salaSanaTB = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.kirjauduBT = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -74,7 +74,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.kirjauduBT);
             this.groupBox1.Controls.Add(this.salaSanaTB);
             this.groupBox1.Controls.Add(this.ktunnusTB);
             this.groupBox1.Controls.Add(this.label4);
@@ -119,16 +119,16 @@
             this.salaSanaTB.Size = new System.Drawing.Size(227, 26);
             this.salaSanaTB.TabIndex = 3;
             // 
-            // button1
+            // kirjauduBT
             // 
-            this.button1.BackColor = System.Drawing.Color.Gray;
-            this.button1.Font = new System.Drawing.Font("Miriam Libre", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(284, 135);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 36);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Kirjaudu sisään";
-            this.button1.UseVisualStyleBackColor = false;
+            this.kirjauduBT.BackColor = System.Drawing.Color.Gray;
+            this.kirjauduBT.Font = new System.Drawing.Font("Miriam Libre", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kirjauduBT.Location = new System.Drawing.Point(284, 135);
+            this.kirjauduBT.Name = "kirjauduBT";
+            this.kirjauduBT.Size = new System.Drawing.Size(162, 36);
+            this.kirjauduBT.TabIndex = 4;
+            this.kirjauduBT.Text = "Kirjaudu sisään";
+            this.kirjauduBT.UseVisualStyleBackColor = false;
             // 
             // loginFM
             // 
@@ -156,7 +156,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button kirjauduBT;
         private System.Windows.Forms.TextBox salaSanaTB;
         private System.Windows.Forms.TextBox ktunnusTB;
         private System.Windows.Forms.Label label4;

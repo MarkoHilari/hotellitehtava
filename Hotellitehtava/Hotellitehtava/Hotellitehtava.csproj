@@ -66,6 +66,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VaraustenHallinta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VaraustenHallinta.Designer.cs">
+      <DependentUpon>VaraustenHallinta.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="asiakkaidenhallinta.resx">
       <DependentUpon>asiakkaidenhallinta.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,6 +90,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="VaraustenHallinta.resx">
+      <DependentUpon>VaraustenHallinta.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
