@@ -33,11 +33,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.ktunnusTB = new System.Windows.Forms.TextBox();
-            this.salaSanaTB = new System.Windows.Forms.TextBox();
             this.kirjauduBT = new System.Windows.Forms.Button();
+            this.salaSanaTB = new System.Windows.Forms.TextBox();
+            this.ktunnusTB = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -85,15 +85,30 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
-            // label3
+            // kirjauduBT
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Miriam Libre", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 38);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(195, 29);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Käyttäjätunnus:";
+            this.kirjauduBT.BackColor = System.Drawing.Color.Gray;
+            this.kirjauduBT.Font = new System.Drawing.Font("Miriam Libre", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kirjauduBT.Location = new System.Drawing.Point(265, 133);
+            this.kirjauduBT.Name = "kirjauduBT";
+            this.kirjauduBT.Size = new System.Drawing.Size(162, 36);
+            this.kirjauduBT.TabIndex = 4;
+            this.kirjauduBT.Text = "Kirjaudu sisään";
+            this.kirjauduBT.UseVisualStyleBackColor = false;
+            // 
+            // salaSanaTB
+            // 
+            this.salaSanaTB.Location = new System.Drawing.Point(265, 85);
+            this.salaSanaTB.Name = "salaSanaTB";
+            this.salaSanaTB.Size = new System.Drawing.Size(227, 26);
+            this.salaSanaTB.TabIndex = 3;
+            // 
+            // ktunnusTB
+            // 
+            this.ktunnusTB.Location = new System.Drawing.Point(265, 38);
+            this.ktunnusTB.Name = "ktunnusTB";
+            this.ktunnusTB.Size = new System.Drawing.Size(227, 26);
+            this.ktunnusTB.TabIndex = 2;
             // 
             // label4
             // 
@@ -105,30 +120,15 @@
             this.label4.TabIndex = 1;
             this.label4.Text = "Salasana:";
             // 
-            // ktunnusTB
+            // label3
             // 
-            this.ktunnusTB.Location = new System.Drawing.Point(265, 38);
-            this.ktunnusTB.Name = "ktunnusTB";
-            this.ktunnusTB.Size = new System.Drawing.Size(227, 26);
-            this.ktunnusTB.TabIndex = 2;
-            // 
-            // salaSanaTB
-            // 
-            this.salaSanaTB.Location = new System.Drawing.Point(265, 85);
-            this.salaSanaTB.Name = "salaSanaTB";
-            this.salaSanaTB.Size = new System.Drawing.Size(227, 26);
-            this.salaSanaTB.TabIndex = 3;
-            // 
-            // kirjauduBT
-            // 
-            this.kirjauduBT.BackColor = System.Drawing.Color.Gray;
-            this.kirjauduBT.Font = new System.Drawing.Font("Miriam Libre", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kirjauduBT.Location = new System.Drawing.Point(284, 135);
-            this.kirjauduBT.Name = "kirjauduBT";
-            this.kirjauduBT.Size = new System.Drawing.Size(162, 36);
-            this.kirjauduBT.TabIndex = 4;
-            this.kirjauduBT.Text = "Kirjaudu sisään";
-            this.kirjauduBT.UseVisualStyleBackColor = false;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Miriam Libre", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(21, 38);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(195, 29);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Käyttäjätunnus:";
             // 
             // loginFM
             // 
