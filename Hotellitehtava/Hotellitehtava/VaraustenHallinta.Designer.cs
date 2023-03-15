@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.varausNroTB = new System.Windows.Forms.TextBox();
+            this.asiakasNroCB = new System.Windows.Forms.ComboBox();
+            this.huoneenNumeroCB = new System.Windows.Forms.ComboBox();
+            this.huonetyyppiCB = new System.Windows.Forms.ComboBox();
+            this.sisaanDTP = new System.Windows.Forms.DateTimePicker();
+            this.ulosDTP = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.uusiVarausBT = new System.Windows.Forms.Button();
             this.tyhjennaVarausKenttaBT = new System.Windows.Forms.Button();
             this.poistaVarausBT = new System.Windows.Forms.Button();
             this.muokkaaVarausBT = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -54,21 +54,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.label7);
             this.panel1.Location = new System.Drawing.Point(2, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1203, 182);
             this.panel1.TabIndex = 0;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox1.Font = new System.Drawing.Font("Miriam Libre", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(365, 60);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(431, 65);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Varausten hallinta";
             // 
             // label1
             // 
@@ -130,52 +120,52 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Asiakas nro:";
             // 
-            // textBox2
+            // varausNroTB
             // 
-            this.textBox2.Location = new System.Drawing.Point(228, 213);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(142, 26);
-            this.textBox2.TabIndex = 7;
+            this.varausNroTB.Location = new System.Drawing.Point(228, 213);
+            this.varausNroTB.Name = "varausNroTB";
+            this.varausNroTB.Size = new System.Drawing.Size(142, 26);
+            this.varausNroTB.TabIndex = 7;
             // 
-            // comboBox1
+            // asiakasNroCB
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(228, 263);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(142, 28);
-            this.comboBox1.TabIndex = 8;
+            this.asiakasNroCB.FormattingEnabled = true;
+            this.asiakasNroCB.Location = new System.Drawing.Point(228, 263);
+            this.asiakasNroCB.Name = "asiakasNroCB";
+            this.asiakasNroCB.Size = new System.Drawing.Size(142, 28);
+            this.asiakasNroCB.TabIndex = 8;
             // 
-            // comboBox3
+            // huoneenNumeroCB
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(228, 379);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(142, 28);
-            this.comboBox3.TabIndex = 10;
+            this.huoneenNumeroCB.FormattingEnabled = true;
+            this.huoneenNumeroCB.Location = new System.Drawing.Point(228, 379);
+            this.huoneenNumeroCB.Name = "huoneenNumeroCB";
+            this.huoneenNumeroCB.Size = new System.Drawing.Size(142, 28);
+            this.huoneenNumeroCB.TabIndex = 10;
             // 
-            // comboBox4
+            // huonetyyppiCB
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(228, 320);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(142, 28);
-            this.comboBox4.TabIndex = 11;
+            this.huonetyyppiCB.FormattingEnabled = true;
+            this.huonetyyppiCB.Location = new System.Drawing.Point(228, 320);
+            this.huonetyyppiCB.Name = "huonetyyppiCB";
+            this.huonetyyppiCB.Size = new System.Drawing.Size(142, 28);
+            this.huonetyyppiCB.TabIndex = 11;
             // 
-            // dateTimePicker1
+            // sisaanDTP
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(228, 437);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(142, 26);
-            this.dateTimePicker1.TabIndex = 12;
+            this.sisaanDTP.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.sisaanDTP.Location = new System.Drawing.Point(228, 437);
+            this.sisaanDTP.Name = "sisaanDTP";
+            this.sisaanDTP.Size = new System.Drawing.Size(142, 26);
+            this.sisaanDTP.TabIndex = 12;
             // 
-            // dateTimePicker2
+            // ulosDTP
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(228, 495);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(142, 26);
-            this.dateTimePicker2.TabIndex = 13;
+            this.ulosDTP.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.ulosDTP.Location = new System.Drawing.Point(228, 495);
+            this.ulosDTP.Name = "ulosDTP";
+            this.ulosDTP.Size = new System.Drawing.Size(142, 26);
+            this.ulosDTP.TabIndex = 13;
             // 
             // dataGridView1
             // 
@@ -191,9 +181,9 @@
             // 
             this.uusiVarausBT.Location = new System.Drawing.Point(12, 569);
             this.uusiVarausBT.Name = "uusiVarausBT";
-            this.uusiVarausBT.Size = new System.Drawing.Size(155, 38);
+            this.uusiVarausBT.Size = new System.Drawing.Size(124, 38);
             this.uusiVarausBT.TabIndex = 15;
-            this.uusiVarausBT.Text = "Lisää uusi varaus";
+            this.uusiVarausBT.Text = "Lisää varaus";
             this.uusiVarausBT.UseVisualStyleBackColor = true;
             // 
             // tyhjennaVarausKenttaBT
@@ -216,12 +206,22 @@
             // 
             // muokkaaVarausBT
             // 
-            this.muokkaaVarausBT.Location = new System.Drawing.Point(173, 569);
+            this.muokkaaVarausBT.Location = new System.Drawing.Point(142, 569);
             this.muokkaaVarausBT.Name = "muokkaaVarausBT";
-            this.muokkaaVarausBT.Size = new System.Drawing.Size(100, 38);
+            this.muokkaaVarausBT.Size = new System.Drawing.Size(131, 38);
             this.muokkaaVarausBT.TabIndex = 18;
             this.muokkaaVarausBT.Text = "Muokkaa";
             this.muokkaaVarausBT.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Miriam Libre", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(370, 54);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(433, 58);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Varausten hallinta";
             // 
             // VaraustenHallinta
             // 
@@ -234,12 +234,12 @@
             this.Controls.Add(this.tyhjennaVarausKenttaBT);
             this.Controls.Add(this.uusiVarausBT);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.ulosDTP);
+            this.Controls.Add(this.sisaanDTP);
+            this.Controls.Add(this.huonetyyppiCB);
+            this.Controls.Add(this.huoneenNumeroCB);
+            this.Controls.Add(this.asiakasNroCB);
+            this.Controls.Add(this.varausNroTB);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -247,6 +247,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "VaraustenHallinta";
             this.Text = "VaraustenHallinta";
             this.panel1.ResumeLayout(false);
@@ -260,23 +261,23 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.TextBox varausNroTB;
+        private System.Windows.Forms.ComboBox asiakasNroCB;
+        private System.Windows.Forms.ComboBox huoneenNumeroCB;
+        private System.Windows.Forms.ComboBox huonetyyppiCB;
+        private System.Windows.Forms.DateTimePicker sisaanDTP;
+        private System.Windows.Forms.DateTimePicker ulosDTP;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button uusiVarausBT;
         private System.Windows.Forms.Button tyhjennaVarausKenttaBT;
         private System.Windows.Forms.Button poistaVarausBT;
         private System.Windows.Forms.Button muokkaaVarausBT;
+        private System.Windows.Forms.Label label7;
     }
 }
