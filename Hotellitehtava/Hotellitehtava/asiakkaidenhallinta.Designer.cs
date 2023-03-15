@@ -36,12 +36,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.etuTB = new System.Windows.Forms.TextBox();
+            this.sukuTB = new System.Windows.Forms.TextBox();
+            this.lahiTB = new System.Windows.Forms.TextBox();
+            this.postinroTB = new System.Windows.Forms.TextBox();
+            this.kauttajaTB = new System.Windows.Forms.TextBox();
+            this.salasTB = new System.Windows.Forms.TextBox();
+            this.uusiAsBT = new System.Windows.Forms.Button();
+            this.muokkaaBT = new System.Windows.Forms.Button();
+            this.PoistaBT = new System.Windows.Forms.Button();
+            this.tyhjennaBT = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,53 +119,93 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Salasana:";
             // 
-            // textBox1
+            // etuTB
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(312, 292);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(262, 40);
-            this.textBox1.TabIndex = 7;
+            this.etuTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.etuTB.Location = new System.Drawing.Point(312, 292);
+            this.etuTB.Name = "etuTB";
+            this.etuTB.Size = new System.Drawing.Size(262, 40);
+            this.etuTB.TabIndex = 7;
             // 
-            // textBox2
+            // sukuTB
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(312, 347);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(262, 40);
-            this.textBox2.TabIndex = 8;
+            this.sukuTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sukuTB.Location = new System.Drawing.Point(312, 347);
+            this.sukuTB.Name = "sukuTB";
+            this.sukuTB.Size = new System.Drawing.Size(262, 40);
+            this.sukuTB.TabIndex = 8;
             // 
-            // textBox3
+            // lahiTB
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(312, 406);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(262, 40);
-            this.textBox3.TabIndex = 9;
+            this.lahiTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lahiTB.Location = new System.Drawing.Point(312, 406);
+            this.lahiTB.Name = "lahiTB";
+            this.lahiTB.Size = new System.Drawing.Size(262, 40);
+            this.lahiTB.TabIndex = 9;
             // 
-            // textBox4
+            // postinroTB
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(312, 462);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(262, 40);
-            this.textBox4.TabIndex = 10;
+            this.postinroTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.postinroTB.Location = new System.Drawing.Point(312, 462);
+            this.postinroTB.Name = "postinroTB";
+            this.postinroTB.Size = new System.Drawing.Size(262, 40);
+            this.postinroTB.TabIndex = 10;
             // 
-            // textBox5
+            // kauttajaTB
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(312, 524);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(262, 40);
-            this.textBox5.TabIndex = 11;
+            this.kauttajaTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kauttajaTB.Location = new System.Drawing.Point(312, 524);
+            this.kauttajaTB.Name = "kauttajaTB";
+            this.kauttajaTB.Size = new System.Drawing.Size(262, 40);
+            this.kauttajaTB.TabIndex = 11;
             // 
-            // textBox6
+            // salasTB
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(312, 584);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(262, 40);
-            this.textBox6.TabIndex = 12;
+            this.salasTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salasTB.Location = new System.Drawing.Point(312, 584);
+            this.salasTB.Name = "salasTB";
+            this.salasTB.Size = new System.Drawing.Size(262, 40);
+            this.salasTB.TabIndex = 12;
+            // 
+            // uusiAsBT
+            // 
+            this.uusiAsBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uusiAsBT.Location = new System.Drawing.Point(51, 716);
+            this.uusiAsBT.Name = "uusiAsBT";
+            this.uusiAsBT.Size = new System.Drawing.Size(214, 51);
+            this.uusiAsBT.TabIndex = 13;
+            this.uusiAsBT.Text = "Lisää asiakas";
+            this.uusiAsBT.UseVisualStyleBackColor = true;
+            // 
+            // muokkaaBT
+            // 
+            this.muokkaaBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.muokkaaBT.Location = new System.Drawing.Point(360, 716);
+            this.muokkaaBT.Name = "muokkaaBT";
+            this.muokkaaBT.Size = new System.Drawing.Size(214, 51);
+            this.muokkaaBT.TabIndex = 14;
+            this.muokkaaBT.Text = "Muokkaa";
+            this.muokkaaBT.UseVisualStyleBackColor = true;
+            // 
+            // PoistaBT
+            // 
+            this.PoistaBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PoistaBT.Location = new System.Drawing.Point(51, 836);
+            this.PoistaBT.Name = "PoistaBT";
+            this.PoistaBT.Size = new System.Drawing.Size(228, 51);
+            this.PoistaBT.TabIndex = 15;
+            this.PoistaBT.Text = "Poista";
+            this.PoistaBT.UseVisualStyleBackColor = true;
+            // 
+            // tyhjennaBT
+            // 
+            this.tyhjennaBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tyhjennaBT.Location = new System.Drawing.Point(347, 836);
+            this.tyhjennaBT.Name = "tyhjennaBT";
+            this.tyhjennaBT.Size = new System.Drawing.Size(227, 51);
+            this.tyhjennaBT.TabIndex = 16;
+            this.tyhjennaBT.Text = "Tyhjennä kentät";
+            this.tyhjennaBT.UseVisualStyleBackColor = true;
             // 
             // asiakkaidenhallinta
             // 
@@ -170,12 +214,16 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1624, 1042);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tyhjennaBT);
+            this.Controls.Add(this.PoistaBT);
+            this.Controls.Add(this.muokkaaBT);
+            this.Controls.Add(this.uusiAsBT);
+            this.Controls.Add(this.salasTB);
+            this.Controls.Add(this.kauttajaTB);
+            this.Controls.Add(this.postinroTB);
+            this.Controls.Add(this.lahiTB);
+            this.Controls.Add(this.sukuTB);
+            this.Controls.Add(this.etuTB);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -200,11 +248,15 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox etuTB;
+        private System.Windows.Forms.TextBox sukuTB;
+        private System.Windows.Forms.TextBox lahiTB;
+        private System.Windows.Forms.TextBox postinroTB;
+        private System.Windows.Forms.TextBox kauttajaTB;
+        private System.Windows.Forms.TextBox salasTB;
+        private System.Windows.Forms.Button uusiAsBT;
+        private System.Windows.Forms.Button muokkaaBT;
+        private System.Windows.Forms.Button PoistaBT;
+        private System.Windows.Forms.Button tyhjennaBT;
     }
 }
