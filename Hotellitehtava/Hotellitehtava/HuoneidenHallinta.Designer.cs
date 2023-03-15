@@ -33,21 +33,21 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.huoneNroTB = new System.Windows.Forms.TextBox();
+            this.huoneTyTB = new System.Windows.Forms.TextBox();
+            this.hallintaPuhTB = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lisaaHuoBT = new System.Windows.Forms.Button();
+            this.muokkaaHuoTB = new System.Windows.Forms.Button();
+            this.poistaHuoTB = new System.Windows.Forms.Button();
+            this.tyhjennaKenTB = new System.Windows.Forms.Button();
+            this.hallintaDG = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hallintaDG)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,7 +75,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(57, 330);
+            this.label3.Location = new System.Drawing.Point(67, 326);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(173, 40);
             this.label3.TabIndex = 2;
@@ -85,38 +85,42 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(111, 399);
+            this.label4.Location = new System.Drawing.Point(134, 412);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 40);
             this.label4.TabIndex = 3;
             this.label4.Text = "Vapaa:";
             // 
-            // textBox1
+            // huoneNroTB
             // 
-            this.textBox1.Location = new System.Drawing.Point(351, 210);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(262, 31);
-            this.textBox1.TabIndex = 4;
+            this.huoneNroTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.huoneNroTB.Location = new System.Drawing.Point(351, 205);
+            this.huoneNroTB.Name = "huoneNroTB";
+            this.huoneNroTB.Size = new System.Drawing.Size(262, 38);
+            this.huoneNroTB.TabIndex = 4;
             // 
-            // textBox2
+            // huoneTyTB
             // 
-            this.textBox2.Location = new System.Drawing.Point(351, 272);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(262, 31);
-            this.textBox2.TabIndex = 5;
+            this.huoneTyTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.huoneTyTB.Location = new System.Drawing.Point(351, 266);
+            this.huoneTyTB.Name = "huoneTyTB";
+            this.huoneTyTB.Size = new System.Drawing.Size(262, 38);
+            this.huoneTyTB.TabIndex = 5;
             // 
-            // textBox3
+            // hallintaPuhTB
             // 
-            this.textBox3.Location = new System.Drawing.Point(351, 330);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(262, 31);
-            this.textBox3.TabIndex = 6;
+            this.hallintaPuhTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hallintaPuhTB.Location = new System.Drawing.Point(351, 329);
+            this.hallintaPuhTB.Name = "hallintaPuhTB";
+            this.hallintaPuhTB.Size = new System.Drawing.Size(262, 38);
+            this.hallintaPuhTB.TabIndex = 6;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(351, 373);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(351, 395);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(262, 66);
             this.groupBox1.TabIndex = 7;
@@ -127,7 +131,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(37, 19);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(90, 29);
+            this.radioButton1.Size = new System.Drawing.Size(104, 35);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Kyllä";
@@ -138,61 +142,61 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(159, 19);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(62, 29);
+            this.radioButton2.Size = new System.Drawing.Size(69, 35);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Ei";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // lisaaHuoBT
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(54, 494);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(209, 52);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Lisää Huone";
-            this.button1.UseVisualStyleBackColor = true;
+            this.lisaaHuoBT.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lisaaHuoBT.Location = new System.Drawing.Point(54, 494);
+            this.lisaaHuoBT.Name = "lisaaHuoBT";
+            this.lisaaHuoBT.Size = new System.Drawing.Size(209, 52);
+            this.lisaaHuoBT.TabIndex = 8;
+            this.lisaaHuoBT.Text = "Lisää Huone";
+            this.lisaaHuoBT.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // muokkaaHuoTB
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(322, 494);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(266, 52);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Muokkaa";
-            this.button2.UseVisualStyleBackColor = true;
+            this.muokkaaHuoTB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.muokkaaHuoTB.Location = new System.Drawing.Point(322, 494);
+            this.muokkaaHuoTB.Name = "muokkaaHuoTB";
+            this.muokkaaHuoTB.Size = new System.Drawing.Size(266, 52);
+            this.muokkaaHuoTB.TabIndex = 9;
+            this.muokkaaHuoTB.Text = "Muokkaa";
+            this.muokkaaHuoTB.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // poistaHuoTB
             // 
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(64, 578);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(199, 52);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Poista";
-            this.button3.UseVisualStyleBackColor = true;
+            this.poistaHuoTB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.poistaHuoTB.Location = new System.Drawing.Point(64, 578);
+            this.poistaHuoTB.Name = "poistaHuoTB";
+            this.poistaHuoTB.Size = new System.Drawing.Size(199, 52);
+            this.poistaHuoTB.TabIndex = 10;
+            this.poistaHuoTB.Text = "Poista";
+            this.poistaHuoTB.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // tyhjennaKenTB
             // 
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(322, 578);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(266, 52);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Tyhjennä kentät";
-            this.button4.UseVisualStyleBackColor = true;
+            this.tyhjennaKenTB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tyhjennaKenTB.Location = new System.Drawing.Point(322, 578);
+            this.tyhjennaKenTB.Name = "tyhjennaKenTB";
+            this.tyhjennaKenTB.Size = new System.Drawing.Size(266, 52);
+            this.tyhjennaKenTB.TabIndex = 11;
+            this.tyhjennaKenTB.Text = "Tyhjennä kentät";
+            this.tyhjennaKenTB.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // hallintaDG
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(664, 202);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(704, 452);
-            this.dataGridView1.TabIndex = 12;
+            this.hallintaDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.hallintaDG.Location = new System.Drawing.Point(664, 202);
+            this.hallintaDG.Name = "hallintaDG";
+            this.hallintaDG.RowHeadersWidth = 82;
+            this.hallintaDG.RowTemplate.Height = 33;
+            this.hallintaDG.Size = new System.Drawing.Size(704, 452);
+            this.hallintaDG.TabIndex = 12;
             // 
             // panel1
             // 
@@ -222,15 +226,15 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1380, 666);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.hallintaDG);
+            this.Controls.Add(this.tyhjennaKenTB);
+            this.Controls.Add(this.poistaHuoTB);
+            this.Controls.Add(this.muokkaaHuoTB);
+            this.Controls.Add(this.lisaaHuoBT);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.hallintaPuhTB);
+            this.Controls.Add(this.huoneTyTB);
+            this.Controls.Add(this.huoneNroTB);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -239,7 +243,7 @@
             this.Text = "HuoneidenHallinta";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hallintaDG)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -253,17 +257,17 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox huoneNroTB;
+        private System.Windows.Forms.TextBox huoneTyTB;
+        private System.Windows.Forms.TextBox hallintaPuhTB;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button lisaaHuoBT;
+        private System.Windows.Forms.Button muokkaaHuoTB;
+        private System.Windows.Forms.Button poistaHuoTB;
+        private System.Windows.Forms.Button tyhjennaKenTB;
+        private System.Windows.Forms.DataGridView hallintaDG;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
     }
