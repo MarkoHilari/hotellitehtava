@@ -1,0 +1,15 @@
+C:\Users\Omistaja\Source\Repos\hotellitehtava\Hotellitehtava\Hotellitehtava\bin\Debug\Hotellitehtava.exe.config
+C:\Users\Omistaja\Source\Repos\hotellitehtava\Hotellitehtava\Hotellitehtava\bin\Debug\Hotellitehtava.exe
+C:\Users\Omistaja\Source\Repos\hotellitehtava\Hotellitehtava\Hotellitehtava\bin\Debug\Hotellitehtava.pdb
+C:\Users\Omistaja\Source\Repos\hotellitehtava\Hotellitehtava\Hotellitehtava\obj\Debug\Hotellitehtava.csproj.AssemblyReference.cache
+C:\Users\Omistaja\Source\Repos\hotellitehtava\Hotellitehtava\Hotellitehtava\obj\Debug\Hotellitehtava.csproj.SuggestedBindingRedirects.cache
+C:\Users\Omistaja\Source\Repos\hotellitehtava\Hotellitehtava\Hotellitehtava\obj\Debug\Hotellitehtava.asiakkaidenhallinta.resources
+C:\Users\Omistaja\Source\Repos\hotellitehtava\Hotellitehtava\Hotellitehtava\obj\Debug\Hotellitehtava.loginFM.resources
+C:\Users\Omistaja\Source\Repos\hotellitehtava\Hotellitehtava\Hotellitehtava\obj\Debug\Hotellitehtava.paaikkuna.resources
+C:\Users\Omistaja\Source\Repos\hotellitehtava\Hotellitehtava\Hotellitehtava\obj\Debug\Hotellitehtava.HuoneidenHallinta.resources
+C:\Users\Omistaja\Source\Repos\hotellitehtava\Hotellitehtava\Hotellitehtava\obj\Debug\Hotellitehtava.Properties.Resources.resources
+C:\Users\Omistaja\Source\Repos\hotellitehtava\Hotellitehtava\Hotellitehtava\obj\Debug\Hotellitehtava.VaraustenHallinta.resources
+C:\Users\Omistaja\Source\Repos\hotellitehtava\Hotellitehtava\Hotellitehtava\obj\Debug\Hotellitehtava.csproj.GenerateResource.cache
+C:\Users\Omistaja\Source\Repos\hotellitehtava\Hotellitehtava\Hotellitehtava\obj\Debug\Hotellitehtava.csproj.CoreCompileInputs.cache
+C:\Users\Omistaja\Source\Repos\hotellitehtava\Hotellitehtava\Hotellitehtava\obj\Debug\Hotellitehtava.exe
+C:\Users\Omistaja\Source\Repos\hotellitehtava\Hotellitehtava\Hotellitehtava\obj\Debug\Hotellitehtava.pdb
