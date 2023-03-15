@@ -95,6 +95,7 @@
             this.kirjauduBT.TabIndex = 4;
             this.kirjauduBT.Text = "Kirjaudu sisään";
             this.kirjauduBT.UseVisualStyleBackColor = false;
+            this.kirjauduBT.Click += new System.EventHandler(this.kirjauduBT_Click);
             // 
             // salaSanaTB
             // 
@@ -102,6 +103,8 @@
             this.salaSanaTB.Name = "salaSanaTB";
             this.salaSanaTB.Size = new System.Drawing.Size(227, 26);
             this.salaSanaTB.TabIndex = 3;
+            this.salaSanaTB.Text = "password";
+            this.salaSanaTB.UseSystemPasswordChar = true;
             // 
             // ktunnusTB
             // 
@@ -109,6 +112,7 @@
             this.ktunnusTB.Name = "ktunnusTB";
             this.ktunnusTB.Size = new System.Drawing.Size(227, 26);
             this.ktunnusTB.TabIndex = 2;
+            this.ktunnusTB.Text = "admin";
             // 
             // label4
             // 
