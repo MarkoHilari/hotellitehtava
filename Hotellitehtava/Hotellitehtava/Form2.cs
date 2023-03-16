@@ -16,5 +16,28 @@ namespace Hotellitehtava
         {
             InitializeComponent();
         }
+
+        private void paaikkuna_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void henkiloMS_Click(object sender, EventArgs e)
+        {
+            asiakkaidenhallinta hallitseCF = new asiakkaidenhallinta();
+            hallitseCF.ShowDialog();
+        }
+
+        private void HuoneMS_Click(object sender, EventArgs e)
+        {
+            HuoneidenHallinta huoneRF = new HuoneidenHallinta();
+            huoneRF.ShowDialog();
+        }
+
+        private void varausMS_Click(object sender, EventArgs e)
+        {
+            VaraustenHallinta varausRSVF = new VaraustenHallinta();
+            varausRSVF.ShowDialog();
+        }
     }
 }

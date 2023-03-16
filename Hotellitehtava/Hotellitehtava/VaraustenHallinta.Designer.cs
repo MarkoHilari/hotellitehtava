@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@
             this.tyhjennaVarausKenttaBT = new System.Windows.Forms.Button();
             this.poistaVarausBT = new System.Windows.Forms.Button();
             this.muokkaaVarausBT = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -55,180 +55,199 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Location = new System.Drawing.Point(2, 0);
+            this.panel1.Location = new System.Drawing.Point(3, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1203, 182);
+            this.panel1.Size = new System.Drawing.Size(1604, 228);
             this.panel1.TabIndex = 0;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(493, 68);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(520, 67);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Varausten hallinta";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Miriam Libre", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(56, 211);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(75, 264);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 29);
+            this.label1.Size = new System.Drawing.Size(181, 36);
             this.label1.TabIndex = 1;
             this.label1.Text = "Varaus nro:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Miriam Libre", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(128, 492);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(171, 615);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 29);
+            this.label2.Size = new System.Drawing.Size(89, 36);
             this.label2.TabIndex = 2;
             this.label2.Text = "Ulos:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Miriam Libre", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(103, 435);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(137, 544);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 29);
+            this.label3.Size = new System.Drawing.Size(121, 36);
             this.label3.TabIndex = 3;
             this.label3.Text = "Sisään:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Miriam Libre", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(35, 377);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(47, 471);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(160, 29);
+            this.label4.Size = new System.Drawing.Size(208, 36);
             this.label4.TabIndex = 4;
             this.label4.Text = "Huoneen nro:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Miriam Libre", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(31, 318);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(41, 398);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(164, 29);
+            this.label5.Size = new System.Drawing.Size(202, 36);
             this.label5.TabIndex = 5;
             this.label5.Text = "Huonetyyppi:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Miriam Libre", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(47, 261);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(63, 326);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(148, 29);
+            this.label6.Size = new System.Drawing.Size(192, 36);
             this.label6.TabIndex = 6;
             this.label6.Text = "Asiakas nro:";
             // 
             // varausNroTB
             // 
-            this.varausNroTB.Location = new System.Drawing.Point(228, 213);
+            this.varausNroTB.Location = new System.Drawing.Point(304, 266);
+            this.varausNroTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.varausNroTB.Name = "varausNroTB";
-            this.varausNroTB.Size = new System.Drawing.Size(142, 26);
+            this.varausNroTB.Size = new System.Drawing.Size(188, 31);
             this.varausNroTB.TabIndex = 7;
             // 
             // asiakasNroCB
             // 
             this.asiakasNroCB.FormattingEnabled = true;
-            this.asiakasNroCB.Location = new System.Drawing.Point(228, 263);
+            this.asiakasNroCB.Location = new System.Drawing.Point(304, 329);
+            this.asiakasNroCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.asiakasNroCB.Name = "asiakasNroCB";
-            this.asiakasNroCB.Size = new System.Drawing.Size(142, 28);
+            this.asiakasNroCB.Size = new System.Drawing.Size(188, 33);
             this.asiakasNroCB.TabIndex = 8;
             // 
             // huoneenNumeroCB
             // 
             this.huoneenNumeroCB.FormattingEnabled = true;
-            this.huoneenNumeroCB.Location = new System.Drawing.Point(228, 379);
+            this.huoneenNumeroCB.Location = new System.Drawing.Point(304, 474);
+            this.huoneenNumeroCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.huoneenNumeroCB.Name = "huoneenNumeroCB";
-            this.huoneenNumeroCB.Size = new System.Drawing.Size(142, 28);
+            this.huoneenNumeroCB.Size = new System.Drawing.Size(188, 33);
             this.huoneenNumeroCB.TabIndex = 10;
             // 
             // huonetyyppiCB
             // 
             this.huonetyyppiCB.FormattingEnabled = true;
-            this.huonetyyppiCB.Location = new System.Drawing.Point(228, 320);
+            this.huonetyyppiCB.Location = new System.Drawing.Point(304, 400);
+            this.huonetyyppiCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.huonetyyppiCB.Name = "huonetyyppiCB";
-            this.huonetyyppiCB.Size = new System.Drawing.Size(142, 28);
+            this.huonetyyppiCB.Size = new System.Drawing.Size(188, 33);
             this.huonetyyppiCB.TabIndex = 11;
             // 
             // sisaanDTP
             // 
             this.sisaanDTP.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.sisaanDTP.Location = new System.Drawing.Point(228, 437);
+            this.sisaanDTP.Location = new System.Drawing.Point(304, 546);
+            this.sisaanDTP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sisaanDTP.Name = "sisaanDTP";
-            this.sisaanDTP.Size = new System.Drawing.Size(142, 26);
+            this.sisaanDTP.Size = new System.Drawing.Size(188, 31);
             this.sisaanDTP.TabIndex = 12;
             // 
             // ulosDTP
             // 
             this.ulosDTP.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.ulosDTP.Location = new System.Drawing.Point(228, 495);
+            this.ulosDTP.Location = new System.Drawing.Point(304, 619);
+            this.ulosDTP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ulosDTP.Name = "ulosDTP";
-            this.ulosDTP.Size = new System.Drawing.Size(142, 26);
+            this.ulosDTP.Size = new System.Drawing.Size(188, 31);
             this.ulosDTP.TabIndex = 13;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(421, 196);
+            this.dataGridView1.Location = new System.Drawing.Point(561, 245);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(771, 561);
+            this.dataGridView1.Size = new System.Drawing.Size(1028, 701);
             this.dataGridView1.TabIndex = 14;
             // 
             // uusiVarausBT
             // 
-            this.uusiVarausBT.Location = new System.Drawing.Point(12, 569);
+            this.uusiVarausBT.Location = new System.Drawing.Point(16, 711);
+            this.uusiVarausBT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uusiVarausBT.Name = "uusiVarausBT";
-            this.uusiVarausBT.Size = new System.Drawing.Size(124, 38);
+            this.uusiVarausBT.Size = new System.Drawing.Size(165, 48);
             this.uusiVarausBT.TabIndex = 15;
             this.uusiVarausBT.Text = "Lisää varaus";
             this.uusiVarausBT.UseVisualStyleBackColor = true;
             // 
             // tyhjennaVarausKenttaBT
             // 
-            this.tyhjennaVarausKenttaBT.Location = new System.Drawing.Point(215, 643);
+            this.tyhjennaVarausKenttaBT.Location = new System.Drawing.Point(287, 804);
+            this.tyhjennaVarausKenttaBT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tyhjennaVarausKenttaBT.Name = "tyhjennaVarausKenttaBT";
-            this.tyhjennaVarausKenttaBT.Size = new System.Drawing.Size(155, 38);
+            this.tyhjennaVarausKenttaBT.Size = new System.Drawing.Size(207, 48);
             this.tyhjennaVarausKenttaBT.TabIndex = 16;
             this.tyhjennaVarausKenttaBT.Text = "Tyhjennä kentät";
             this.tyhjennaVarausKenttaBT.UseVisualStyleBackColor = true;
             // 
             // poistaVarausBT
             // 
-            this.poistaVarausBT.Location = new System.Drawing.Point(279, 569);
+            this.poistaVarausBT.Location = new System.Drawing.Point(372, 711);
+            this.poistaVarausBT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.poistaVarausBT.Name = "poistaVarausBT";
-            this.poistaVarausBT.Size = new System.Drawing.Size(91, 38);
+            this.poistaVarausBT.Size = new System.Drawing.Size(121, 48);
             this.poistaVarausBT.TabIndex = 17;
             this.poistaVarausBT.Text = "Poista";
             this.poistaVarausBT.UseVisualStyleBackColor = true;
             // 
             // muokkaaVarausBT
             // 
-            this.muokkaaVarausBT.Location = new System.Drawing.Point(142, 569);
+            this.muokkaaVarausBT.Location = new System.Drawing.Point(189, 711);
+            this.muokkaaVarausBT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.muokkaaVarausBT.Name = "muokkaaVarausBT";
-            this.muokkaaVarausBT.Size = new System.Drawing.Size(131, 38);
+            this.muokkaaVarausBT.Size = new System.Drawing.Size(175, 48);
             this.muokkaaVarausBT.TabIndex = 18;
             this.muokkaaVarausBT.Text = "Muokkaa";
             this.muokkaaVarausBT.UseVisualStyleBackColor = true;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Miriam Libre", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(370, 54);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(433, 58);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Varausten hallinta";
-            // 
             // VaraustenHallinta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(1206, 775);
+            this.ClientSize = new System.Drawing.Size(1608, 969);
             this.Controls.Add(this.muokkaaVarausBT);
             this.Controls.Add(this.poistaVarausBT);
             this.Controls.Add(this.tyhjennaVarausKenttaBT);
@@ -248,7 +267,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "VaraustenHallinta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VaraustenHallinta";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

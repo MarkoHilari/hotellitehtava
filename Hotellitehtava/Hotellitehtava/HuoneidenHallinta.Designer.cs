@@ -37,8 +37,8 @@
             this.huoneTyTB = new System.Windows.Forms.TextBox();
             this.hallintaPuhTB = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.lisaaHuoBT = new System.Windows.Forms.Button();
             this.muokkaaHuoTB = new System.Windows.Forms.Button();
             this.poistaHuoTB = new System.Windows.Forms.Button();
@@ -126,17 +126,6 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(37, 19);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(104, 35);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Kyllä";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
@@ -147,6 +136,17 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Ei";
             this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(37, 19);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(104, 35);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Kyllä";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // lisaaHuoBT
             // 
@@ -240,6 +240,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "HuoneidenHallinta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HuoneidenHallinta";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

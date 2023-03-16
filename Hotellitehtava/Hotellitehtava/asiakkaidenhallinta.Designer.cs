@@ -51,13 +51,17 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(636, 271);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 33;
             this.dataGridView1.Size = new System.Drawing.Size(976, 759);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // label1
             // 
@@ -156,6 +160,7 @@
             this.kauttajaTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kauttajaTB.Location = new System.Drawing.Point(312, 524);
             this.kauttajaTB.Name = "kauttajaTB";
+            this.kauttajaTB.ReadOnly = true;
             this.kauttajaTB.Size = new System.Drawing.Size(262, 40);
             this.kauttajaTB.TabIndex = 11;
             // 
@@ -176,6 +181,7 @@
             this.uusiAsBT.TabIndex = 13;
             this.uusiAsBT.Text = "Lisää asiakas";
             this.uusiAsBT.UseVisualStyleBackColor = true;
+            this.uusiAsBT.Click += new System.EventHandler(this.uusiAsBT_Click);
             // 
             // muokkaaBT
             // 
@@ -186,6 +192,7 @@
             this.muokkaaBT.TabIndex = 14;
             this.muokkaaBT.Text = "Muokkaa";
             this.muokkaaBT.UseVisualStyleBackColor = true;
+            this.muokkaaBT.Click += new System.EventHandler(this.muokkaaBT_Click);
             // 
             // PoistaBT
             // 
@@ -206,6 +213,7 @@
             this.tyhjennaBT.TabIndex = 16;
             this.tyhjennaBT.Text = "Tyhjennä kentät";
             this.tyhjennaBT.UseVisualStyleBackColor = true;
+            this.tyhjennaBT.Click += new System.EventHandler(this.tyhjennaBT_Click);
             // 
             // asiakkaidenhallinta
             // 
@@ -233,6 +241,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "asiakkaidenhallinta";
             this.Text = "asiakkaidenhallinta";
+            this.Load += new System.EventHandler(this.asiakkaidenhallinta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

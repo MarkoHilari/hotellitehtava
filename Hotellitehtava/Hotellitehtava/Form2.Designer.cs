@@ -57,6 +57,7 @@
             this.henkiloMS.Name = "henkiloMS";
             this.henkiloMS.Size = new System.Drawing.Size(341, 42);
             this.henkiloMS.Text = "Hallitse henkilökunta";
+            this.henkiloMS.Click += new System.EventHandler(this.henkiloMS_Click);
             // 
             // varausMS
             // 
@@ -64,6 +65,7 @@
             this.varausMS.Name = "varausMS";
             this.varausMS.Size = new System.Drawing.Size(290, 42);
             this.varausMS.Text = "Hallitse varauksia";
+            this.varausMS.Click += new System.EventHandler(this.varausMS_Click);
             // 
             // HuoneMS
             // 
@@ -71,6 +73,7 @@
             this.HuoneMS.Name = "HuoneMS";
             this.HuoneMS.Size = new System.Drawing.Size(279, 42);
             this.HuoneMS.Text = "Hallitse huoneita";
+            this.HuoneMS.Click += new System.EventHandler(this.HuoneMS_Click);
             // 
             // paaikkuna
             // 
@@ -84,6 +87,8 @@
             this.Name = "paaikkuna";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pääikkuna";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.paaikkuna_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
