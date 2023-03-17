@@ -76,7 +76,32 @@ namespace Hotellitehtava
             {
                 yhdista.suljeYhteys();
                 return false;
+
             }
         }
+
+              public bool poistaAsiakas(int tunnus)
+        {
+            MySqlCommand komento = new MySqlCommand();
+            string poistaKysely = "DELETE FROM `asiakas` WHERE `tunnus` =@id";
+            komento.CommandText = poistaKysely;
+            komento.Connection = yhdista.otaYhteys();
+            //@id
+            komento.Parameters.Add("@id", MySqlDbType.Int32).Value = tunnus;
+
+            yhdista.avaaYhteys();
+
+            if (komento.ExecuteNonQuery() == 1)
+            {
+                yhdista.suljeYhteys();
+                return true;
+            }
+            else
+            {
+                yhdista.suljeYhteys();
+                return false;
+            }
+        }
+
     }
 }

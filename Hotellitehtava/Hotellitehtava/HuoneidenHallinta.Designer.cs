@@ -34,7 +34,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.huoneNroTB = new System.Windows.Forms.TextBox();
-            this.huoneTyTB = new System.Windows.Forms.TextBox();
             this.hallintaPuhTB = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -46,6 +45,7 @@
             this.hallintaDG = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.huoTyypCB = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hallintaDG)).BeginInit();
             this.panel1.SuspendLayout();
@@ -99,14 +99,6 @@
             this.huoneNroTB.Size = new System.Drawing.Size(262, 38);
             this.huoneNroTB.TabIndex = 4;
             // 
-            // huoneTyTB
-            // 
-            this.huoneTyTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.huoneTyTB.Location = new System.Drawing.Point(351, 266);
-            this.huoneTyTB.Name = "huoneTyTB";
-            this.huoneTyTB.Size = new System.Drawing.Size(262, 38);
-            this.huoneTyTB.TabIndex = 5;
-            // 
             // hallintaPuhTB
             // 
             this.hallintaPuhTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -157,6 +149,7 @@
             this.lisaaHuoBT.TabIndex = 8;
             this.lisaaHuoBT.Text = "Lisää Huone";
             this.lisaaHuoBT.UseVisualStyleBackColor = true;
+            this.lisaaHuoBT.Click += new System.EventHandler(this.lisaaHuoBT_Click);
             // 
             // muokkaaHuoTB
             // 
@@ -167,6 +160,7 @@
             this.muokkaaHuoTB.TabIndex = 9;
             this.muokkaaHuoTB.Text = "Muokkaa";
             this.muokkaaHuoTB.UseVisualStyleBackColor = true;
+            this.muokkaaHuoTB.Click += new System.EventHandler(this.muokkaaHuoTB_Click);
             // 
             // poistaHuoTB
             // 
@@ -177,6 +171,7 @@
             this.poistaHuoTB.TabIndex = 10;
             this.poistaHuoTB.Text = "Poista";
             this.poistaHuoTB.UseVisualStyleBackColor = true;
+            this.poistaHuoTB.Click += new System.EventHandler(this.poistaHuoTB_Click);
             // 
             // tyhjennaKenTB
             // 
@@ -187,6 +182,7 @@
             this.tyhjennaKenTB.TabIndex = 11;
             this.tyhjennaKenTB.Text = "Tyhjennä kentät";
             this.tyhjennaKenTB.UseVisualStyleBackColor = true;
+            this.tyhjennaKenTB.Click += new System.EventHandler(this.tyhjennaKenTB_Click);
             // 
             // hallintaDG
             // 
@@ -218,6 +214,15 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Huoneiden hallinta";
             // 
+            // huoTyypCB
+            // 
+            this.huoTyypCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.huoTyypCB.FormattingEnabled = true;
+            this.huoTyypCB.Location = new System.Drawing.Point(351, 263);
+            this.huoTyypCB.Name = "huoTyypCB";
+            this.huoTyypCB.Size = new System.Drawing.Size(262, 33);
+            this.huoTyypCB.TabIndex = 14;
+            // 
             // HuoneidenHallinta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -225,6 +230,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1380, 666);
+            this.Controls.Add(this.huoTyypCB);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.hallintaDG);
             this.Controls.Add(this.tyhjennaKenTB);
@@ -233,7 +239,6 @@
             this.Controls.Add(this.lisaaHuoBT);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.hallintaPuhTB);
-            this.Controls.Add(this.huoneTyTB);
             this.Controls.Add(this.huoneNroTB);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -242,6 +247,7 @@
             this.Name = "HuoneidenHallinta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HuoneidenHallinta";
+            this.Load += new System.EventHandler(this.HuoneidenHallinta_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hallintaDG)).EndInit();
@@ -259,7 +265,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox huoneNroTB;
-        private System.Windows.Forms.TextBox huoneTyTB;
         private System.Windows.Forms.TextBox hallintaPuhTB;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButton2;
@@ -271,5 +276,6 @@
         private System.Windows.Forms.DataGridView hallintaDG;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox huoTyypCB;
     }
 }

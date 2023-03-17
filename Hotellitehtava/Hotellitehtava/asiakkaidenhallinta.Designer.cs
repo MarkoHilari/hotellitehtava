@@ -203,6 +203,7 @@
             this.PoistaBT.TabIndex = 15;
             this.PoistaBT.Text = "Poista";
             this.PoistaBT.UseVisualStyleBackColor = true;
+            this.PoistaBT.Click += new System.EventHandler(this.PoistaBT_Click);
             // 
             // tyhjennaBT
             // 

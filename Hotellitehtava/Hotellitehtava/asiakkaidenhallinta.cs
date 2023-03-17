@@ -98,10 +98,10 @@ namespace Hotellitehtava
                 }
             }
             catch (Exception ex)
-            {
+                {
                 MessageBox.Show(ex.Message, "ID Virhe", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
+                }
+                     
             }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -113,6 +113,29 @@ namespace Hotellitehtava
                 lahiTB.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
                 postinroTB.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             
+        }
+
+        private void PoistaBT_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int id = Convert.ToInt32(kauttajaTB.Text);
+
+                if (asiakas.poistaAsiakas(id))
+                {
+                    dataGridView1.DataSource = asiakas.haeAsiakkaat();
+
+                    MessageBox.Show("Asiakas poistettu onnistuneesti", "Poista asiakas", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   
+                }
+                else
+                {
+                    MessageBox.Show("Error - Asiakasta ei poistettu", "Poista asiakas", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ID Virhe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 
