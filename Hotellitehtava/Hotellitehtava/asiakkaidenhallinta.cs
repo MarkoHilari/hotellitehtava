@@ -95,24 +95,29 @@ namespace Hotellitehtava
                         MessageBox.Show("Error - Asiakasta ei päivitetty", "Muokkaa asiakas", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                     }
-                }catch(Exception ex)
+                }
+            }
+            catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "ID Virhe",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "ID Virhe", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             
             }
-        }
-
-     //punaista alapuolella jatkuu
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            kauttajaTB.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            etuTB.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            sukuTB.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            lahiTB.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            postinroTB.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            
+                kauttajaTB.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                etuTB.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                sukuTB.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                lahiTB.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                postinroTB.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            
         }
     }
-}
+
+     //punaista alapuolella jatkuu
+
+ }
+
