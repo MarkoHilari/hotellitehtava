@@ -102,7 +102,6 @@ namespace Hotellitehtava
                 MessageBox.Show(ex.Message, "ID Virhe", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            
             }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
