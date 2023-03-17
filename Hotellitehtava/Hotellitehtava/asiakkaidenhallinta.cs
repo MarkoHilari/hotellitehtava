@@ -104,7 +104,7 @@ namespace Hotellitehtava
             }
         }
 
-     //punaista alapuolella
+     //punaista alapuolella jatkuu
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
