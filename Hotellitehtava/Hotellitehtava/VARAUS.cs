@@ -5,17 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using MySql.Data.MySqlClient;
-
 namespace Hotellitehtava
 {
-    internal class HUONEET
-
+    internal class VARAUS
     {
         YHDISTA yhdista = new YHDISTA();
-
-        public DataTable huoneTyyppiLista()
+        public DataTable haeVaraukset()
         {
-            MySqlCommand komento = new MySqlCommand("SELECT * FROM `huoneet`", yhdista.otaYhteys());
+
+            
+
+            MySqlCommand komento = new MySqlCommand("SELECT * FROM `varaukset`", yhdista.otaYhteys());
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             DataTable table = new DataTable();
 
@@ -25,17 +25,21 @@ namespace Hotellitehtava
 
             return table;
         }
-        public bool lisaaHuone(int numero, int tyyppi, string puhelin, string vapaa)
+        public bool lisaaVaraus(int numero, int asiakasID, DateTime paivaSisaan, DateTime paivaulos)
         {
+            
+
             MySqlCommand komento = new MySqlCommand();
-            string lisaaKysely = "INSERT INTO `huone`(`numero`, `tyyppi`, `puhelin`, `vapaa`) VALUES (@num,@tp,@phn,@fr)";
+            string lisaaKysely = "INSERT INTO `varaukset`(`huoneID`, `asiakasID`, `paivaSisaan`, `paivaulos`) VALUES (@rnm, @cid, @din, @dout)";
             komento.CommandText = lisaaKysely;
             komento.Connection = yhdista.otaYhteys();
-            // @enimi,@snimi,@lahi,@pnro)
-            komento.Parameters.Add("@num", MySqlDbType.Int32).Value = numero;
-            komento.Parameters.Add("@tp", MySqlDbType.Int32).Value = tyyppi;
-            komento.Parameters.Add("@phn", MySqlDbType.VarChar).Value = puhelin;
-            komento.Parameters.Add("@fr", MySqlDbType.VarChar).Value = vapaa;
+            
+            
+            // @rnm, @cid, @din, @dout
+            komento.Parameters.Add("@rnm", MySqlDbType.Int32).Value = numero;
+            komento.Parameters.Add("@cid", MySqlDbType.Int32).Value = asiakasID;
+            komento.Parameters.Add("@din", MySqlDbType.Date).Value = paivaSisaan;
+            komento.Parameters.Add("@dout", MySqlDbType.Date).Value = paivaulos;
 
             yhdista.avaaYhteys();
 
@@ -51,29 +55,19 @@ namespace Hotellitehtava
             }
 
         }
-        public DataTable haeHuoneet()
-        {
-            MySqlCommand komento = new MySqlCommand("SELECT * FROM `huone`", yhdista.otaYhteys());
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            DataTable table = new DataTable();
 
-            adapter.SelectCommand = komento;
-            adapter.Fill(table);
-
-
-            return table;
-        }
-        public bool muokkaaHuone(int numero, int tyyppi, string puhelin, string vapaa)
+        public bool muokkaaVaraus(int varausID, int numero, int asiakasID, DateTime paivaSisaan, DateTime paivaulos)
         {
             MySqlCommand komento = new MySqlCommand();
-            string muokkaaKysely = "UPDATE `huone` SET`tyyppi`= @tp,`puhelin`= @phn,`vapaa`= @fr WHERE `numero`= @num";
+            string muokkaaKysely = "UPDATE `varaukset` SET `huoneID`= @rnm,`asiakasID`= @cid,`paivaSisaan`= @din,`paivaulos`= @dout WHERE `varausID`= @rvid";
             komento.CommandText = muokkaaKysely;
             komento.Connection = yhdista.otaYhteys();
-            // @enimi,@snimi,@lahi,@pnro)
-            komento.Parameters.Add("@num", MySqlDbType.Int32).Value = numero;
-            komento.Parameters.Add("@tp", MySqlDbType.Int32).Value = tyyppi;
-            komento.Parameters.Add("@phn", MySqlDbType.VarChar).Value = puhelin;
-            komento.Parameters.Add("@fr", MySqlDbType.VarChar).Value = vapaa;
+            // @rnm, @cid, @din, @dout, @rvid
+            komento.Parameters.Add("@rvid", MySqlDbType.Int32).Value = varausID;
+            komento.Parameters.Add("@rnm", MySqlDbType.Int32).Value = numero;
+            komento.Parameters.Add("@cid", MySqlDbType.Int32).Value = asiakasID;
+            komento.Parameters.Add("@din", MySqlDbType.Date).Value = paivaSisaan;
+            komento.Parameters.Add("@dout", MySqlDbType.Date).Value = paivaulos;
 
             yhdista.avaaYhteys();
 
@@ -89,15 +83,14 @@ namespace Hotellitehtava
 
             }
         }
-
-        public bool poistaHuone(int numero)
+        public bool poistaVaraus(int varausID)
         {
             MySqlCommand komento = new MySqlCommand();
-            string poistaKysely = "DELETE FROM `huone` WHERE `numero`= @num";
+            string poistaKysely = "DELETE FROM `varaukset` WHERE `varausID` = @rvid";
             komento.CommandText = poistaKysely;
             komento.Connection = yhdista.otaYhteys();
             //@num
-            komento.Parameters.Add("@num", MySqlDbType.Int32).Value = numero;
+            komento.Parameters.Add("@num", MySqlDbType.Int32).Value = varausID;
 
             yhdista.avaaYhteys();
 

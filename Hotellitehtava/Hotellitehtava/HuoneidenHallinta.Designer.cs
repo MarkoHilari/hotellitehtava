@@ -35,9 +35,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.huoneNroTB = new System.Windows.Forms.TextBox();
             this.hallintaPuhTB = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.lisaaHuoBT = new System.Windows.Forms.Button();
             this.muokkaaHuoTB = new System.Windows.Forms.Button();
             this.poistaHuoTB = new System.Windows.Forms.Button();
@@ -46,9 +43,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.huoTyypCB = new System.Windows.Forms.ComboBox();
-            this.groupBox1.SuspendLayout();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.radioButtonYes = new System.Windows.Forms.RadioButton();
+            this.radioButtonNo = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.hallintaDG)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -107,39 +107,6 @@
             this.hallintaPuhTB.Size = new System.Drawing.Size(262, 38);
             this.hallintaPuhTB.TabIndex = 6;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(351, 395);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(262, 66);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(159, 19);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(69, 35);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Ei";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(37, 19);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(104, 35);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Kyllä";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
             // lisaaHuoBT
             // 
             this.lisaaHuoBT.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -186,6 +153,7 @@
             // 
             // hallintaDG
             // 
+            this.hallintaDG.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.hallintaDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.hallintaDG.Location = new System.Drawing.Point(664, 202);
             this.hallintaDG.Name = "hallintaDG";
@@ -193,6 +161,7 @@
             this.hallintaDG.RowTemplate.Height = 33;
             this.hallintaDG.Size = new System.Drawing.Size(704, 452);
             this.hallintaDG.TabIndex = 12;
+            this.hallintaDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.hallintaDG_CellClick);
             // 
             // panel1
             // 
@@ -223,6 +192,41 @@
             this.huoTyypCB.Size = new System.Drawing.Size(262, 33);
             this.huoTyypCB.TabIndex = 14;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.radioButtonNo);
+            this.panel2.Controls.Add(this.radioButtonYes);
+            this.panel2.Location = new System.Drawing.Point(337, 399);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(266, 68);
+            this.panel2.TabIndex = 15;
+            // 
+            // radioButtonYes
+            // 
+            this.radioButtonYes.AutoSize = true;
+            this.radioButtonYes.Checked = true;
+            this.radioButtonYes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonYes.ForeColor = System.Drawing.Color.Green;
+            this.radioButtonYes.Location = new System.Drawing.Point(19, 17);
+            this.radioButtonYes.Name = "radioButtonYes";
+            this.radioButtonYes.Size = new System.Drawing.Size(129, 35);
+            this.radioButtonYes.TabIndex = 0;
+            this.radioButtonYes.TabStop = true;
+            this.radioButtonYes.Text = "KYLLÄ";
+            this.radioButtonYes.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonNo
+            // 
+            this.radioButtonNo.AutoSize = true;
+            this.radioButtonNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonNo.ForeColor = System.Drawing.Color.Red;
+            this.radioButtonNo.Location = new System.Drawing.Point(175, 17);
+            this.radioButtonNo.Name = "radioButtonNo";
+            this.radioButtonNo.Size = new System.Drawing.Size(71, 35);
+            this.radioButtonNo.TabIndex = 1;
+            this.radioButtonNo.Text = "EI";
+            this.radioButtonNo.UseVisualStyleBackColor = true;
+            // 
             // HuoneidenHallinta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -230,6 +234,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1380, 666);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.huoTyypCB);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.hallintaDG);
@@ -237,7 +242,6 @@
             this.Controls.Add(this.poistaHuoTB);
             this.Controls.Add(this.muokkaaHuoTB);
             this.Controls.Add(this.lisaaHuoBT);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.hallintaPuhTB);
             this.Controls.Add(this.huoneNroTB);
             this.Controls.Add(this.label4);
@@ -248,11 +252,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HuoneidenHallinta";
             this.Load += new System.EventHandler(this.HuoneidenHallinta_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hallintaDG)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,9 +270,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox huoneNroTB;
         private System.Windows.Forms.TextBox hallintaPuhTB;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Button lisaaHuoBT;
         private System.Windows.Forms.Button muokkaaHuoTB;
         private System.Windows.Forms.Button poistaHuoTB;
@@ -277,5 +278,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox huoTyypCB;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.RadioButton radioButtonNo;
+        private System.Windows.Forms.RadioButton radioButtonYes;
     }
 }

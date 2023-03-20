@@ -56,7 +56,7 @@
             this.panel1.BackColor = System.Drawing.Color.LightGray;
             this.panel1.Controls.Add(this.label7);
             this.panel1.Location = new System.Drawing.Point(3, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1604, 228);
             this.panel1.TabIndex = 0;
@@ -141,7 +141,7 @@
             // varausNroTB
             // 
             this.varausNroTB.Location = new System.Drawing.Point(304, 266);
-            this.varausNroTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.varausNroTB.Margin = new System.Windows.Forms.Padding(4);
             this.varausNroTB.Name = "varausNroTB";
             this.varausNroTB.Size = new System.Drawing.Size(188, 31);
             this.varausNroTB.TabIndex = 7;
@@ -150,7 +150,7 @@
             // 
             this.asiakasNroCB.FormattingEnabled = true;
             this.asiakasNroCB.Location = new System.Drawing.Point(304, 329);
-            this.asiakasNroCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.asiakasNroCB.Margin = new System.Windows.Forms.Padding(4);
             this.asiakasNroCB.Name = "asiakasNroCB";
             this.asiakasNroCB.Size = new System.Drawing.Size(188, 33);
             this.asiakasNroCB.TabIndex = 8;
@@ -159,7 +159,7 @@
             // 
             this.huoneenNumeroCB.FormattingEnabled = true;
             this.huoneenNumeroCB.Location = new System.Drawing.Point(304, 474);
-            this.huoneenNumeroCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.huoneenNumeroCB.Margin = new System.Windows.Forms.Padding(4);
             this.huoneenNumeroCB.Name = "huoneenNumeroCB";
             this.huoneenNumeroCB.Size = new System.Drawing.Size(188, 33);
             this.huoneenNumeroCB.TabIndex = 10;
@@ -168,25 +168,27 @@
             // 
             this.huonetyyppiCB.FormattingEnabled = true;
             this.huonetyyppiCB.Location = new System.Drawing.Point(304, 400);
-            this.huonetyyppiCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.huonetyyppiCB.Margin = new System.Windows.Forms.Padding(4);
             this.huonetyyppiCB.Name = "huonetyyppiCB";
             this.huonetyyppiCB.Size = new System.Drawing.Size(188, 33);
             this.huonetyyppiCB.TabIndex = 11;
             // 
             // sisaanDTP
             // 
-            this.sisaanDTP.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.sisaanDTP.CustomFormat = "dd/MM/yyyy";
+            this.sisaanDTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.sisaanDTP.Location = new System.Drawing.Point(304, 546);
-            this.sisaanDTP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sisaanDTP.Margin = new System.Windows.Forms.Padding(4);
             this.sisaanDTP.Name = "sisaanDTP";
             this.sisaanDTP.Size = new System.Drawing.Size(188, 31);
             this.sisaanDTP.TabIndex = 12;
             // 
             // ulosDTP
             // 
-            this.ulosDTP.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.ulosDTP.CustomFormat = "dd/MM/yyyy";
+            this.ulosDTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.ulosDTP.Location = new System.Drawing.Point(304, 619);
-            this.ulosDTP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ulosDTP.Margin = new System.Windows.Forms.Padding(4);
             this.ulosDTP.Name = "ulosDTP";
             this.ulosDTP.Size = new System.Drawing.Size(188, 31);
             this.ulosDTP.TabIndex = 13;
@@ -195,7 +197,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(561, 245);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
@@ -205,7 +207,7 @@
             // uusiVarausBT
             // 
             this.uusiVarausBT.Location = new System.Drawing.Point(16, 711);
-            this.uusiVarausBT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uusiVarausBT.Margin = new System.Windows.Forms.Padding(4);
             this.uusiVarausBT.Name = "uusiVarausBT";
             this.uusiVarausBT.Size = new System.Drawing.Size(165, 48);
             this.uusiVarausBT.TabIndex = 15;
@@ -215,17 +217,18 @@
             // tyhjennaVarausKenttaBT
             // 
             this.tyhjennaVarausKenttaBT.Location = new System.Drawing.Point(287, 804);
-            this.tyhjennaVarausKenttaBT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tyhjennaVarausKenttaBT.Margin = new System.Windows.Forms.Padding(4);
             this.tyhjennaVarausKenttaBT.Name = "tyhjennaVarausKenttaBT";
             this.tyhjennaVarausKenttaBT.Size = new System.Drawing.Size(207, 48);
             this.tyhjennaVarausKenttaBT.TabIndex = 16;
             this.tyhjennaVarausKenttaBT.Text = "Tyhjennä kentät";
             this.tyhjennaVarausKenttaBT.UseVisualStyleBackColor = true;
+            this.tyhjennaVarausKenttaBT.Click += new System.EventHandler(this.tyhjennaVarausKenttaBT_Click);
             // 
             // poistaVarausBT
             // 
             this.poistaVarausBT.Location = new System.Drawing.Point(372, 711);
-            this.poistaVarausBT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.poistaVarausBT.Margin = new System.Windows.Forms.Padding(4);
             this.poistaVarausBT.Name = "poistaVarausBT";
             this.poistaVarausBT.Size = new System.Drawing.Size(121, 48);
             this.poistaVarausBT.TabIndex = 17;
@@ -235,7 +238,7 @@
             // muokkaaVarausBT
             // 
             this.muokkaaVarausBT.Location = new System.Drawing.Point(189, 711);
-            this.muokkaaVarausBT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.muokkaaVarausBT.Margin = new System.Windows.Forms.Padding(4);
             this.muokkaaVarausBT.Name = "muokkaaVarausBT";
             this.muokkaaVarausBT.Size = new System.Drawing.Size(175, 48);
             this.muokkaaVarausBT.TabIndex = 18;
@@ -266,11 +269,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "VaraustenHallinta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VaraustenHallinta";
+            this.Load += new System.EventHandler(this.VaraustenHallinta_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
