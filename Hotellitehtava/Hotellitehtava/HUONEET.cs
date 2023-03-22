@@ -25,6 +25,45 @@ namespace Hotellitehtava
 
             return table;
         }
+
+        public DataTable huoneTyyppi(int tyyppi)
+        {
+            MySqlCommand komento = new MySqlCommand("SELECT * FROM `huone` WHERE `tyyppi`= @typ and vapaa='Kyllä'", yhdista.otaYhteys());
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+
+            komento.Parameters.Add("@typ", MySqlDbType.Int32).Value = tyyppi;
+            adapter.SelectCommand = komento;
+            adapter.Fill(table);
+           
+
+            return table;
+        }
+
+
+        public bool huoneEI(int numero)
+        {
+            MySqlCommand komento = new MySqlCommand("UPDATE `huone` SET `vapaa`= 'EI' WHERE `numero`=@num", yhdista.otaYhteys());
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+
+            komento.Parameters.Add("@num", MySqlDbType.Int32).Value = numero;
+
+            yhdista.avaaYhteys();
+
+            if(komento.ExecuteNonQuery() == 1)
+            {
+                yhdista.suljeYhteys();
+                return true;
+            }
+            else
+            {
+                yhdista.suljeYhteys();
+                return false;
+            }
+            
+
+        }
         public bool lisaaHuone(int numero, int tyyppi, string puhelin, string vapaa)
         {
             MySqlCommand komento = new MySqlCommand();
