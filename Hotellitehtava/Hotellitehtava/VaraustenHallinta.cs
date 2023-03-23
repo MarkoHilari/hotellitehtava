@@ -106,7 +106,7 @@ namespace Hotellitehtava
             try
             {
                 int asiakasID = Convert.ToInt32(asiakasNroTB.Text);
-
+                int varausID = Convert.ToInt32(varausTB.Text);
                 int huoneNRO = Convert.ToInt32(huoneenNumeroCB.SelectedValue);
                 DateTime sisaan = sisaanDTP.Value;
                 DateTime ulos = ulosDTP.Value;
@@ -121,7 +121,7 @@ namespace Hotellitehtava
                 }
                 else
                 {
-                    if (varaus.muokkaaVaraus(huoneNRO, asiakasID, sisaan, ulos))
+                    if(varaus.muokkaaVaraus(varausID, huoneNRO, asiakasID, sisaan, ulos))
                     {
                         huone.huoneEI(huoneNRO);
                         MessageBox.Show("Uusi varaus lisätty", "Uusi varaus", MessageBoxButtons.OK, MessageBoxIcon.Information);

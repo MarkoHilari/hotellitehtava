@@ -169,7 +169,7 @@
             // varausDG
             // 
             this.varausDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.varausDG.Location = new System.Drawing.Point(561, 245);
+            this.varausDG.Location = new System.Drawing.Point(537, 225);
             this.varausDG.Margin = new System.Windows.Forms.Padding(4);
             this.varausDG.Name = "varausDG";
             this.varausDG.RowHeadersWidth = 62;
