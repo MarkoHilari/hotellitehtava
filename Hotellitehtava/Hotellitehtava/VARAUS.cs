@@ -90,7 +90,7 @@ namespace Hotellitehtava
             komento.CommandText = poistaKysely;
             komento.Connection = yhdista.otaYhteys();
             //@num
-            komento.Parameters.Add("@num", MySqlDbType.Int32).Value = varausID;
+            komento.Parameters.Add("@rvid", MySqlDbType.Int32).Value = varausID;
 
             yhdista.avaaYhteys();
 

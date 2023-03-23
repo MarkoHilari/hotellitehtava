@@ -40,14 +40,28 @@ namespace Hotellitehtava
             return table;
         }
 
-
-        public bool huoneEI(int numero)
+        public int haeHuoneTyyppi(int numero)
         {
-            MySqlCommand komento = new MySqlCommand("UPDATE `huone` SET `vapaa`= 'EI' WHERE `numero`=@num", yhdista.otaYhteys());
+            MySqlCommand komento = new MySqlCommand("SELECT `tyyppi` FROM `huone` WHERE vapaa='Kyllä `numero`=@num;", yhdista.otaYhteys());
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             DataTable table = new DataTable();
 
             komento.Parameters.Add("@num", MySqlDbType.Int32).Value = numero;
+            adapter.SelectCommand = komento;
+            adapter.Fill(table);
+
+
+            return Convert.ToInt32(table.Rows[0][0].ToString());
+        }
+
+        public bool huoneVapaa(int numero, String Kyllä_or_EI)
+        {
+            MySqlCommand komento = new MySqlCommand("UPDATE `huone` SET `vapaa`=@Kyllä_EI WHERE `numero`=@num", yhdista.otaYhteys());
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+
+            komento.Parameters.Add("@num", MySqlDbType.Int32).Value = numero;
+            komento.Parameters.Add("@Kyllä_EI", MySqlDbType.VarChar).Value = Kyllä_or_EI;
 
             yhdista.avaaYhteys();
 
