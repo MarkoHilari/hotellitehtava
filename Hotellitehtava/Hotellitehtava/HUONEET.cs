@@ -42,10 +42,10 @@ namespace Hotellitehtava
 
         public int haeHuoneTyyppi(int numero)
         {
-            MySqlCommand komento = new MySqlCommand("SELECT `tyyppi` FROM `huone` WHERE vapaa='Kyllä `numero`=@num;", yhdista.otaYhteys());
+            MySqlCommand komento = new MySqlCommand("SELECT `tyyppi` FROM `huone` WHERE `vapaa`='Kyllä'", yhdista.otaYhteys());
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             DataTable table = new DataTable();
-
+            // `numero`=@num;
             komento.Parameters.Add("@num", MySqlDbType.Int32).Value = numero;
             adapter.SelectCommand = komento;
             adapter.Fill(table);
