@@ -28,7 +28,6 @@ namespace Hotellitehtava
         public bool lisaaVaraus(int numero, int asiakasID, DateTime paivaSisaan, DateTime paivaulos)
         {
             
-
             MySqlCommand komento = new MySqlCommand();
             string lisaaKysely = "INSERT INTO `varaukset`(`huoneID`, `asiakasID`, `paivaSisaan`, `paivaulos`) VALUES (@rnm, @cid, @din, @dout)";
             komento.CommandText = lisaaKysely;
