@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VaraustenHallinta));
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,28 +46,9 @@
             this.asiakasNroTB = new System.Windows.Forms.TextBox();
             this.varausTB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.varausDG)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.LightGray;
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Location = new System.Drawing.Point(2, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1203, 182);
-            this.panel1.TabIndex = 0;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(370, 54);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(388, 52);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Varausten hallinta";
             // 
             // label2
             // 
@@ -209,7 +189,7 @@
             // asiakasNroTB
             // 
             this.asiakasNroTB.Location = new System.Drawing.Point(228, 264);
-            this.asiakasNroTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiakasNroTB.Margin = new System.Windows.Forms.Padding(2);
             this.asiakasNroTB.Name = "asiakasNroTB";
             this.asiakasNroTB.Size = new System.Drawing.Size(144, 26);
             this.asiakasNroTB.TabIndex = 19;
@@ -217,7 +197,7 @@
             // varausTB
             // 
             this.varausTB.Location = new System.Drawing.Point(228, 218);
-            this.varausTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.varausTB.Margin = new System.Windows.Forms.Padding(2);
             this.varausTB.Name = "varausTB";
             this.varausTB.Size = new System.Drawing.Size(144, 26);
             this.varausTB.TabIndex = 21;
@@ -232,12 +212,26 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "Varaus nro:";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(321, 48);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(356, 46);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Varausten hallinta";
+            // 
             // VaraustenHallinta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1206, 775);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.varausTB);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.asiakasNroTB);
@@ -255,13 +249,10 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel1);
             this.Name = "VaraustenHallinta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VaraustenHallinta";
             this.Load += new System.EventHandler(this.VaraustenHallinta_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.varausDG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -269,8 +260,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -285,9 +274,9 @@
         private System.Windows.Forms.Button tyhjennaVarausKenttaBT;
         private System.Windows.Forms.Button poistaVarausBT;
         private System.Windows.Forms.Button muokkaaVarausBT;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox asiakasNroTB;
         private System.Windows.Forms.TextBox varausTB;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label7;
     }
 }
