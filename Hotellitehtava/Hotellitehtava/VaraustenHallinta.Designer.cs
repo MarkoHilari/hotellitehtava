@@ -142,7 +142,7 @@
             this.varausDG.Name = "varausDG";
             this.varausDG.RowHeadersWidth = 62;
             this.varausDG.RowTemplate.Height = 28;
-            this.varausDG.Size = new System.Drawing.Size(771, 561);
+            this.varausDG.Size = new System.Drawing.Size(880, 576);
             this.varausDG.TabIndex = 14;
             this.varausDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.varausDG_CellClick);
             // 
@@ -230,7 +230,7 @@
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1206, 775);
+            this.ClientSize = new System.Drawing.Size(1313, 808);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.varausTB);
             this.Controls.Add(this.label1);

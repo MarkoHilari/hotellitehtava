@@ -147,7 +147,7 @@ namespace Hotellitehtava
             varausTB.Text = varausDG.CurrentRow.Cells[0].Value.ToString();
             int huoneID = Convert.ToInt32(varausDG.CurrentRow.Cells[1].Value.ToString());
             huonetyyppiCB.SelectedValue = huone.haeHuoneTyyppi(huoneID);
-            huoneenNumeroCB.SelectedValue = Convert.ToInt32(varausDG.CurrentRow.Cells[1].Value.ToString());
+            huoneenNumeroCB.Text = huoneID.ToString();
             asiakasNroTB.Text = varausDG.CurrentRow.Cells[2].Value.ToString();
             
             
